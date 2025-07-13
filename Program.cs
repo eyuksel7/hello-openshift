@@ -4,6 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 var app = builder.Build();
 
 // Swagger middleware’i ekle
@@ -14,5 +15,6 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 }
 
 app.MapGet("/api/hello", () => "Hello from OpenShift Sandbox!");
+app.MapGet("/", () => Results.Redirect("/swagger"));
 
 app.Run();
