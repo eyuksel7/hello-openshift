@@ -1,20 +1,19 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Swagger servisini ekle
+// Swagger servisi
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
 var app = builder.Build();
 
-// // Swagger middleware’i ekle
-// if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
-// {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-// }
+// Swagger ve routing middleware'leri
+app.UseSwagger();
+app.UseSwaggerUI();
 
+// Swagger erişim testi için sade response
+app.MapGet("/", () => "pong");
+
+// Örnek API
 app.MapGet("/api/hello", () => "Hello from OpenShift Sandbox!");
-app.MapGet("/", () => Results.Redirect("/swagger"));
 
 app.Run();
