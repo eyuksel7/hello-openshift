@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HelloOpenshift")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9698172a11f01054c46812b5f0e7e0f3c24bdc8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+596086202da37a52de97b01b5fe9999e25003617")]
 [assembly: System.Reflection.AssemblyProductAttribute("HelloOpenshift")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HelloOpenshift")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
